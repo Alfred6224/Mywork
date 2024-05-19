@@ -1,38 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App-header{
+  width: 500px;
+  height: 600px;
+  border: 2px solid red;
+}
+.Cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App-header h1{
+  text-align: center;
+  margin-top: 10px;
+  color: red;
+}
+.form{
+  margin-top: 5px;
+  /* background-color: black; */
+  width: 80%;
+  height: fit-content;
+}
+.btn{
+  width: 95%;
+  padding: 10px;
+  margin-top: 3px;
+  border: none;
+  outline: none;
+}
+.btn-i{
+  width: 100%;
+  padding: 8px;
+  margin-top: 3px;
+  border: none;
+  outline: none;
+  background-color: #981c39;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.btn-i:hover{
+  background-color: red;
+}
+.btn::placeholder{
+  color: #981c39;
+  font-size: 15px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.but-i{
+  padding: 5px;
+  margin-left: 5px;
+  border-radius: 5px;
+  background-color: #981c39;
+  border: none;
+  outline: none;
+  color: white;
+  width: 20%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.but-i:hover{
+  background-color: red;
+}
+.editt{
+  width: 85.9%;
+  padding: 7px;
+  margin-top: 2px;
+  border: none;
+  outline: none;
+}
+.editt-i{
+  width: 89%;
+  padding: 10px;
+  margin-top: 3px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #981c39;
+  transition: 0.5s ease-in-out;
+}
+.editt-i:hover{
+  background-color: red;
+}
+.sav{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+}
+ul {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li div {
+  text-align: left;
+  flex-grow: 1;
+}
+
+li div strong {
+  display: block;
+  font-size: 18px;
+}
+
+li div p {
+  margin: 5px 0;
+  font-size: 16px;
 }
