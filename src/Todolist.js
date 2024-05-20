@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const TodoList = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
-  const [todos, setTodos] = useState([]); // State to manage multiple todos
+  const [todos, setTodos] = useState([]);
 
   const handleTitleChange = (e) => {
     setTitle(e.target.value);
@@ -14,17 +14,13 @@ const TodoList = () => {
   };
 
   const handleAddTodo = () => {
-    // Create a new todo object and add it to the todos array
     const newTodo = { title, content };
     setTodos([...todos, newTodo]);
-    // Clear the input fields after adding a todo
     setTitle('');
     setContent('');
   };
   const handleDeleteTodo = (index) => {
-    // Filter out the todo item at the specified index
     const updatedTodos = todos.filter((todo, i) => i !== index);
-    // Update the todos array with the filtered array
     setTodos(updatedTodos);
   };
 
